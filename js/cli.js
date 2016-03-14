@@ -1,5 +1,8 @@
 var wordCount = require('./wordCount.js').wordCount;
+var prompt = require('prompt');
+prompt.start();
 
-var entry_body = prompt('enter your journal entry');
-var test = wordCount("something random is happening");
+prompt.get('entry_body', function(err, test) {
+var test = wordCount(test.entry_body);
 console.log(test);
+});
