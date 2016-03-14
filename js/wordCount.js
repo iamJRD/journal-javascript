@@ -5,4 +5,4 @@ exports.wordCount = function(entry_body){
     count ++;
   }
   return count;
-}
+};

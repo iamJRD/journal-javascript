@@ -5,6 +5,6 @@ prompt.start();
 
 
 prompt.get('entry_body', function(err, test) {
-var test = wordCount(test.entry_body);
-console.log(test);
+  test = wordCount(test.entry_body);
+  console.log(test);
 });
